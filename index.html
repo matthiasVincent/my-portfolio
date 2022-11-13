@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d8053aa7b.js" crossorigin="anonymous"></script>
+ 
+   <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="cont">
+            <nav>
+            <h1><span>M</span>ATTHIAS.</h1>
+            <ul id ="g">
+                
+                <li><a href="#header">Homes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contacts</a></li>
+                <i class="fa-solid fa-xmark" id="close" onclick="hide()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" id="bar" onclick="disp()"></i>
+            </nav>
+        </div>
+        <div class="hd-txt">
+            <p>Software Engineer</p>
+            <h1>Hey, I'm <span>Matthias</span> <br>Sunday Oduh<br>from Nigeria</h1>
+        </div>
+    </div>
+    
+    
+    <!-- About session -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/back2.png">
+                </div>
+                <div class="col2">
+                    <h1 class="abt">About Me</h1>
+                    <p class="txt">
+                           My name is <span>Matthias</span> Sunday Oduh. I studied Electrical and Electronics Engineering at  Federal University of Agriculture, Makurdi, where I graduated in 2020 with a First Class Honours. Even though I didn't possess some of the requirements contained in the advertisement, I feel I have what it takes to perfectly fit in for the job judging by my sound background in the subject.
+                    </p>
+                    <div class="tabs">
+                        <p class="tab active-tab" onclick ="display('skills')">Skills</p>
+                        <p class="tab" onclick="display('experience')">Experience</p>
+                        <p class="tab" onclick="display('education')">Education</p>
+                    </div>
+                <div class="tab-co active-cont" id="skills">
+                    <h2>UI/UX Design</h2>
+                    <p>I designed eye-catching user interfaces for individual and organization </p>
+                    <h2>Web Apps Development</h2>
+                    <p>I build web applications for websites</p>
+                    <h2>Embedded systems</h2>
+                    <p>I design and bulid different kinds of embedded systems for home and industry</p>
+                    
+                </div>
+                <div class="tab-co" id="experience">
+                    <h2>2017-2018</h2>
+                    <p>Internship at Directorate of ICT, University of Agriculture, Makurdi</p>
+                    <h2>2021-2022</h2>
+                    <p>Technical Instructor at Government Craft Development Centre, Polaku, Bayelsa State</p>
+                    <h2>2022-present</h2>
+                    <p>Lead Engineer at Tektrons embedded Limited</p>
+                </div>
+                <div class="tab-co" id="education">
+                    <h2>2022-2023</h2>
+                    <p>Software Engineering at ALX SE School</p>
+                    <h2>2021</h2>
+                    <p>HSE at Crystal Safety and Training Resources, Port Harcourt</p>
+                    <h2>2014-2020</h2>
+                    <p>B.Eng Electrical and Electronics Engineering</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- -------services------- -->
+  <div id="services">
+      <div class="cont-service">
+          <h1>My Services</h1>
+          <div class="service-list">
+              <div>
+                  <i class="fa-duotone fa-code"></i>
+                  <h2>UI/UX Design</h2>
+                  <p>Contact me if you need an eye-catching user interfaces on your website. I design user interface for individual and corporate bodies</p>
+                  <a href="#">Learn More...</a>
+              </div>
+              
+              <div>
+                  <i class="fa-solid fa-crop-simple"></i>
+                 <h2>Web Design</h2>
+                  <p>Contact me if you need an eye-catching your website and web apps. I design user interface for individual and corporate bodies</p>
+                  <a href="#">Learn More...</a>
+              </div>
+              
+              <div>
+                  <i class="fa-regular fa-microchip"></i>
+                  <h2>Embedded Systems</h2>
+                  <p>Embedded systems are computers that serve a purpose.
+                  Think of IOT, monitor your appliances from anywhere around the globe</p>
+                  <a href="#">Learn More...</a>
+              </div>
+              
+          </div>
+      </div>
+  </div>  
+    
+  </body>
+</html>
