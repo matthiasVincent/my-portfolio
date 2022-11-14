@@ -242,7 +242,7 @@ nav ul li a:hover::after{
      line-height : 35px;
  }
 
-.service-list div i{
+.service-list div span{
     font-size : 50px;
     font-weight : 500;
     margin-bottom : 15px;
