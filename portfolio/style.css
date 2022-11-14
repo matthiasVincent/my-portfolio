@@ -259,7 +259,7 @@ nav ul li a:hover::after{
     padding : 10px 15px;
 }
 
-nav .fa-solid{
+nav span{
     display:none;
 }
 
