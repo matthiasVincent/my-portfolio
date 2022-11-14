@@ -243,10 +243,10 @@ nav ul li a:hover::after{
  }
 
 .service-list div i{
-    font-size : 40px;
+    font-size : 50px;
     font-weight : 500;
     margin-bottom : 15px;
-    padding : 10px 15px;
+    padding : 10px 5px;
 }
 
 .service-list div a{
@@ -259,7 +259,7 @@ nav ul li a:hover::after{
     padding : 10px 15px;
 }
 
-nav span{
+#bar, #close{
     display:none;
 }
 
@@ -324,9 +324,10 @@ html{
     }
     #bar{
         padding-right : 10px;
+display : block;
     }
     #close{
-    
+    display : block;
     font-size : 25px;
     font-weight : 400;
     position:absolute;
