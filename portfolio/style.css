@@ -2,7 +2,7 @@
 {
     margin : 0;
     padding:0;
-    font-family : 'poppins', sans-Serif;
+    font-family : 'Poppins', sans-Serif;
     box-sizing : border-box;
 }
 
@@ -10,18 +10,22 @@ body {
     background: #080808 ;
     color : #fff;
 }
-#header{
+#header 
+{
     width : 100%;
     height : 100vh;
     background:url('images/back1.png') ;
-    background-size : cover;
-    background-position : origin;
+    background-size : 50% 100%;
+    background-position : center;
+    background-repeat: no-repeat;
+    padding : 0 10px;
+   /* border: solid 2px red;
+    position : relative;*/
 }
 
 .cont{
     width : 100%;
-    margin-top : 20px;
-    margin-left : 30px;
+   /* border: solid 2px rgb(8, 206, 90);*/
 }
 
 nav{
@@ -66,6 +70,7 @@ nav ul li a::after{
     left : 0;
     bottom : -5px;
     background:#d40071;
+    transition: height 0.5s;
 }
 
 nav ul li a:hover::after{
@@ -77,6 +82,9 @@ nav ul li a:hover::after{
     font-size : 30px;
     padding: 20px 60px;
     overflow : hidden;
+    position : absolute;
+    left : 10px;
+    bottom : 40%;
 }
 
 .hd-txt h1{
@@ -90,7 +98,6 @@ nav ul li a:hover::after{
 }
 
 #about{
-    margin-top : 60px;
     padding : 40px 30px;
 }
 
@@ -99,25 +106,42 @@ nav ul li a:hover::after{
 }
 
 .row{
-    /*display:flex;
+    display:flex;
     justify-content: space-between;
-    flex-wrap:wrap;*/
+    flex-wrap:wrap;
     display : flex;
     justify-content : space-between;
     flex-wrap : wrap;
 }
 .col1{
     flex-basis : 35%;
-    position:relative;
+    /*border: solid 2px #d40071;*/
+    transition: display 0.5s;
 }
-.col1 img{
+#cover1{
     width : 100%;
     filter : grayscale(0);
+    border-radius : 15px;
 }
-.col1 img:hover{
+
+#Cover{
+    /*display: none;*/
+    width: 100%;
+    display :none;
+
+}
+
+.col1:hover #cover1{
+    display :none
+}
+.col1:hover #Cover{
+    display :block
+}
+/*
+.col1.cover1:hover{
     filter : grayscale(1);
-    /*background : url("images/back3.jpg";*/
-}
+    /*background : url("images/back3.jpg");
+}*/
 
 .col2{
     flex-basis : 60%;
@@ -149,21 +173,21 @@ nav ul li a:hover::after{
     display : flex;
     justify-content : space-between;
     flex-wrap : wrap;
+    cursor: pointer;
     
 }
 
 .tab{
     position:relative;
 }
-.tab:hover{
-    outline : solid 2px green;
-}
+/*.tab:hover{
+   outline : solid 2px green;
+}*/
 
 /*.tabs p::after{
     content: '';
     width : 40%;
     height : 3px;
-    color : yellow;
   color :#24830b;
     position: absolute;
     left : 0;
@@ -178,14 +202,19 @@ nav ul li a:hover::after{
     background : #24830b;
     left : 0;
     bottom : -8px;
+    transition: width 0.5s;
 }
+/*.tab.active-tab::after{
+    width : 40%;
+}*/
+
 .tab.active-tab::after{
     width : 40%;
 }
 .tab-co{
     margin-top : 10px;
     padding :15px 40px;
-    display : none;
+    display: none;
 }
 
 
@@ -206,7 +235,6 @@ nav ul li a:hover::after{
 }
 
 #services{
-    margin-top : 30px;
     padding : 20px 30px;
 }
 
@@ -244,9 +272,9 @@ nav ul li a:hover::after{
 
 .service-list div span{
     font-size : 50px;
-    font-weight : 500;
+    font-weight : 200;
     margin-bottom : 15px;
-    padding : 10px 5px;
+    padding : 10px 8px;
 }
 
 .service-list div a{
@@ -266,18 +294,122 @@ nav ul li a:hover::after{
 html{
     scroll-behavior : smooth;
 }
+
+/*.imk{
+    width : 50%;
+    padding:10px 10px;
+}
+
+.imk img{
+    width:100%;
+}*/
+
+#portfolio{
+    padding : 40px 0px;
+}
+.port-cont{
+    padding : 0px 40px;
+}
+
+.work-list{
+display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap : 20px;
+        border-radius : 15px;
+    
+}
+.port-cont h1{
+    margin-bottom : 15px;
+    font-size : 40px;
+    font-weight :600;
+}
+
+.work{
+    padding : 20px 30px;
+    border-radius : 15px;
+    position: relative;
+    transition: transform 0.5s;
+   /* border : solid 2px yellow;*/
+    
+}
+.work img{
+display : block;
+width : 100%;
+border-radius : 15px;
+/*border:solid 2px cyan;*/
+    
+}
+.work:hover img{
+    transform : scale(1.1);
+}
+
+.layer{
+    background:linear-gradient(rgba(0,0,0,0.6),#dd4a9b);
+    position : absolute;
+    width:100%;
+    height:0;
+    left : 0;
+    bottom: 0;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    height : 0%;
+    position:absolute;
+    /*border:solid 2px red;
+    left : 0;
+    bottom : 0;
+  /*  flex-wrap : wrap;*/
+    padding : 0 10px;
+    overflow: hidden;
+    border-radius : 15px;
+}
+
+.layer h2{
+    font-size : 15px;
+    font-weight : 400;
+    margin-bottom : 10px;
+}
+/*layer:hover .work{
+    height : 100%;
+}*/
+
+.work:hover .layer{
+    height : 100%;
+}
+
+.layer p{
+    padding : 0 20px;
+    margin-bottom : 10px;
+    font-size : 15px;
+}
+
+.layer a {
+    text-decoration : none;
+    background:white;
+    height : 40px;
+   padding-top : 10px;
+    width : 40px;
+    border-radius : 50%;
+    color : #dd4a9b;
+    text-align : center;
+    /*display: flex;
+    align-items : center;
+    justify-content : center;*/
+}
 /*--------++++Media query+++-------*/
-@media only screen and (max-width : 600px)
+@media only screen and (max-width : 1500px)
 {
-    /*nav i{
+    nav i{
         font-size : 30px;
         margin-right : 15px;
-    }*/
-    nav{
-    
-       /* border : solid 2px cyan;*/
-        margin-top : 0;
     }
+   /* nav{
+    
+        border : solid 2px cyan;
+        margin-top : 0;
+    }*/
     
     .hd-txt{
     margin-top : 30%;
@@ -310,33 +442,34 @@ html{
         font-size : 20px;
         margin-top : 0px;
         padding : 0px 0px;
-        color : red;
-    }
-    #header{
-     /*  border : solid 2px red;*/
-    }
+        color : #fff;
+     }
+    /*#header{
+      border : solid 2px red;
+    }*/
     
     .cont{
         margin-left : 0;
         margin-top : 0;
         padding : 0px;
-       /* position: relative;*/
+       position: relative;
     }
     #bar{
+    display : block;
         padding-right : 10px;
-display : block;
     }
     #close{
     display : block;
+    
     font-size : 25px;
     font-weight : 400;
     position:absolute;
-    top : 0;
+    top: 0;
     right:10px;
         
     }
     .col1{
-       /* border : solid 2px red;*/
+        /*border : solid 2px red;*/
         flex-basis : 100%;
        
     }
@@ -344,4 +477,8 @@ display : block;
     .abt h1{
         text-align : left;
     }
-}
+    
+    .tabs p{
+        padding : 15px 0;
+    }
+} 

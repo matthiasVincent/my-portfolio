@@ -1,11 +1,11 @@
 var tabs = document.getElementsByClassName("tab");
 var conts = document.getElementsByClassName("tab-co");
-console.log(conts);
-console.log(conts.length);
+//console.log(conts);
+//console.log(conts.length);
 
-var g = [2, 4, 8, 9]
+//ar g = [2, 4, 8, 9]
 
-function open(){
+/*function open(){
     for (tab of g)
     {
     console.log("Hello")
@@ -22,11 +22,11 @@ function open(){
     //event.currentTarget.classList.add("active-tab");
     //document.getElementById(name).classList.add("active-cont")
 //}
-//open(name);
+//open(name);*/
 
 function display(str)
 {
-for(tab of tabs)
+for( tab of tabs)
 {
    tab.classList.remove("active-tab")
     //console.log(a.innerHTML)
