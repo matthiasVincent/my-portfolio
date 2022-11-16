@@ -398,8 +398,118 @@ border-radius : 15px;
     align-items : center;
     justify-content : center;*/
 }
+.cont-cont{
+    margin-top: 15px;
+    padding: 0px 30px;
+}
+.cont-left{
+    flex-basis: 35%;
+    padding : 10px 15px
+}
+.cont-left h1{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.cont-left p{
+    padding :10px 15px;
+    font-size: 20px;
+}
+.cont-left p i{
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #dd4a9b;
+}
+.social{
+    padding : 10px 25px;
+    
+}
+.social a{
+    display: inline-block;
+    text-decoration: none;
+    color :#dd4a9b;
+    font-size: 40px;
+    padding: 10px 15px;
+    transition: transform 0.5s;
+    
+}
+.social a:hover .fab{
+    transform: translateY(-8px);
+}
+.social a:hover .fa-brands{
+    transform: translateY(-8px);
+}
+.cont-cont.row{
+    display: flex;
+}
+.cont-right{
+    flex-basis: 60%;
+    margin-left: 30px;
+}
+.cont-right form{
+    width: 100%;
+}
+form input, textarea{
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px 20px;
+    border: 0;
+    outline: none;
+    background: #21211e;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.btn{
+border: solid 1px rgb(95, 95, 109);
+margin: 10px auto;
+background-color: #21211e;
+padding : 10px 20px;
+width: 30%;
+border-radius: 10px;
+overflow: hidden;
+transition: background-color 0.5s;
+}
+.btn.btn2{
+    margin-left: 40%;
+    color: #fff;
+    background: #d40071;
+    font-size: 30px;
+    
+}
+.btn.btn2.bt{
+    display :block;
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 10x 15px;
+    width: 50%;
+    font-size : 20px;
+    text-align: center;
+    margin-left: 25%;
+
+}
+#down{
+    margin-left: 10px;
+}
+
+.btn a{
+    display:block;
+    width: 100%;
+    text-decoration: none;
+    color:#fff;
+    padding: 5px 5px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin:10px auto;
+}
+.btn:hover{
+    background-color: #dd4a9b;
+}
 /*--------++++Media query+++-------*/
-@media only screen and (max-width : 1500px)
+@media only screen and (max-width : 800px)
 {
     nav i{
         font-size : 30px;
@@ -437,7 +547,6 @@ border-radius : 15px;
     margin-top : 20px;
         padding: 5px 10px;
     }
-    
     nav h1{
         font-size : 20px;
         margin-top : 0px;
@@ -481,4 +590,110 @@ border-radius : 15px;
     .tabs p{
         padding : 15px 0;
     }
+    .btn{
+        border: solid 1px rgb(95, 95, 109);
+        margin: 10px auto;
+        background-color: #21211e;
+        padding : 5px 0px;
+        width:40%;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: background-color 0.5s;
+        }
+        .btn.btn2{
+            margin-left: 30%;
+            color: #fff;
+            background: #d40071;
+            font-size: 15px;
+            width: 50%;
+            padding : 10px 10px
+            
+        }
+        
+        .btn a{
+            display:block;
+            width: 100%;
+            text-decoration: none;
+            color:#fff;
+            font-size: 15px;
+            font-weight: 300;
+            text-align: center;
+            margin:10px auto;
+        }
+        .btn:hover{
+            background-color: #dd4a9b;
+        }
+
 } 
+
+@media only screen and (min-width: 800px)
+{
+    nav{
+        width : 100%;
+            display:flex;
+            align-items : center;
+            justify-content:space-between;
+            flex-wrap : wrap;
+        }
+        
+        nav ul li{
+            list-style : none;
+            display: inline-block;
+            margin : 10px 20px;
+        }
+        
+        nav ul li a{
+            text-decoration : none;
+            color :#fff;
+            font-size : 20px;
+            font-weight : 500;
+            position : relative;
+        }
+        
+        nav h1{
+            font-size : 30px;
+            font-weight : 600;
+        }
+        
+        nav h1 span{
+            font-family : cursive;
+            font-size : 40px;
+            color :#d40071;
+            font-weight : 600;
+        }
+        
+        nav ul li a::after{
+            content : '';
+            width : 100%;
+            height : 0;
+            position: absolute;
+            left : 0;
+            bottom : -5px;
+            background:#d40071;
+            transition: height 0.5s;
+        }
+        
+        nav ul li a:hover::after{
+            height : 3px;
+        }
+        
+        .hd-txt{
+            margin-top : 50%;
+            font-size : 30px;
+            padding: 20px 60px;
+            overflow : hidden;
+            position : absolute;
+            left : 10px;
+            bottom : 40%;
+        }
+        
+        .hd-txt h1{
+            margin-top : 15px;
+            font-weight : 500;
+        }
+        
+        .hd-txt h1 span{
+            color : #d40071;
+            font-weight : 700;
+        }
+}
