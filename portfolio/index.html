@@ -2,199 +2,352 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width = device-width, initial-scale=1"/>
-    <title>personal portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
     <link rel="stylesheet" href="style.css">
- 
-   <script src="script.js"></script>
-     <script src="https://kit.fontawesome.com/8d8053aa7b.js" crossorigin="anonymous"></script>
-     <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster Two&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8d8053aa7b.js" crossorigin="anonymous"></script>
 </head>
-<body>
-   <div id="header">
-        <div class="cont">
-            <nav>
-            <h1><span>M</span>ATTHIAS.</h1>
-            <ul id ="g">
-                
-                <li><a href="#header">Homes</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacts</a></li>
-               <span class="material-symbols-outlined" id="close" onclick="hide()"> 
-close
-</span>
-              <!--  -- <i class="fas fa-times" id="close" onclick="hide()"></i>-->
-            </ul>
-             <span class="material-symbols-outlined" id ="bar" onclick="disp()">
-menu
-</span>
-            <!--  --<i class="fas fa-bars" id="bar" onclick="disp()"></i> -->
-            </nav>
-        </div>
-        <div class="hd-txt">
-            <p>Software Engineer</p>
-            <h1>Hey, I'm <span>Matthias</span> <br>Sunday Oduh<br>from Nigeria</h1>
+<body class="parent-sect">
+    <header class="section sec1 active-sect" id="home">
+<div class="header-cont">
+    <div class="cont-left">
+       <div class="shape"></div>
+             <div id="imag">
+             <img src="img4.png" alt="img">
         </div>
     </div>
-    
+    <div class="cont-right">
+      <h1>Hi, I'm <span>Matth<span></span>ias Sunday Oduh.</span> An Electrical and Electronics Engineer.</h1>
+      
+      <p> I'm a tech enthusiast: this fueled my passion for software engineering in addition to my knowledge in embedded systems.</p>
+    <div class="btn">
+         <a href="#" class="main-btn">
+            <span class="btn-txt">Download Cv</span>
+            <span class="icon"><i class="fas fa-download"></i></span>
+        </a>
 
-    <!-- About session -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col1">
-                    <img src="images/back2.png" id="cover1">
-                    <img src="images/back3.png" id="Cover">
-                </div>
-                <div class="col2">
-                    <h1 class="abt">About Me</h1>
-                    <p class="txt">
-                           My name is <span>Matthias</span> Sunday Oduh. I studied Electrical and Electronics Engineering at  Federal University of Agriculture, Makurdi, where I graduated in 2020 with a First Class Honours. Even though I didn't possess some of the requirements contained in the advertisement, I feel I have what it takes to perfectly fit in for the job judging by my sound background in the subject.
+    </div>
+        <!-- <a href="#">
+               <span> Download Cv</span>
+                    <span class="icon"><i class="fas fa-download"></i></span>
+                </a> -->
+    </div>
+</div>
+    </header>
+    <main>
+        <section class="section sec2 active-sect" id="about">
+            <div class="abt-hd">
+                <h2 class="bg-txt">Short Biography</h2>
+                <p class="sht-txt">About Me</p>
+            </div>
+            <div class="about">
+                <div class="abt-left">
+                    <h2 class="info-txt">Information about me</h2>
+                    <p>
+                        I am a native of Adupi-Orokam in Ogbadibo, LGA Benue State Nigeria. I am Idoma by tribe.  I was born on the 9th of September, 2996 at Ipoba Ajebamibo, Idanre LGA, Ondo State.I speak and write in English language fluently. I can also converse little in Yoruba language. 
                     </p>
-                    <div class="tabs">
-                        <p class="tab active-tab" onclick ="display('skills')">Skills</p>
-                        <p class="tab" onclick="display('experience')">Experience</p>
-                        <p class="tab" onclick="display('education')">Education</p>
+                    <p>
+                         I studied Electrical and Electronics Engineering at FUAM and graduated with first class honour in 2020. Check out my statement of results <a href="#" id="res">here</a>
+                    </p>
+                    <p>
+                        I am keen on making positive impacts in the society with the little resources at my disposal because I believe that is the essence of life. I am hardworking and daring. I welcome constructive criticism wholeheartedly without reservation. I mingle with like minds and always at alert to key into any opportunity that will make me a better me. 
+
+                    </p>
+                    <p>
+                        Interestingly, I am a novelist, song writer, a die-hard Barcelona fan. You can peruse through the manuscripts of my debut novel <a href="#" id="novel">here</a>
+                        <p>
+                            Hobbies includes: reading, writing, watching and playing football and volleyball, singing and studying nature.
+
+                        </p>
+
+                    </p>
+                </div>
+                <div class="abt-right">
+                    <div class="profile">
+                        <h2>Education</h2>
+                        <h2>Skills</h2>
+                        <h2>Work Experience</h2>
                     </div>
-                <div class="tab-co active-cont" id="skills">
-                    <h2>UI/UX Design</h2>
-                    <p>I designed eye-catching user interfaces for individual and organization </p>
-                    <h2>Web Apps Development</h2>
-                    <p>I build web applications for websites</p>
-                    <h2>Embedded systems</h2>
-                    <p>I design and bulid different kinds of embedded systems for home and industry</p>
                     
-                </div>
-                <div class="tab-co" id="experience">
-                    <h2>2017-2018</h2>
-                    <p>Internship at Directorate of ICT, University of Agriculture, Makurdi</p>
-                    <h2>2021-2022</h2>
-                    <p>Technical Instructor at Government Craft Development Centre, Polaku, Bayelsa State</p>
-                    <h2>2022-present</h2>
-                    <p>Lead Engineer at Tektrons embedded Limited</p>
-                </div>
-                <div class="tab-co" id="education">
-                    <h2>2022-2023</h2>
-                    <p>Software Engineering at ALX SE School</p>
-                    <h2>2021</h2>
-                    <p>HSE at Crystal Safety and Training Resources, Port Harcourt</p>
-                    <h2>2014-2020</h2>
-                    <p>B.Eng Electrical and Electronics Engineering</p>
-                </div>
+                    <div class="edu">
+                        <ul class="prof">
+                            <li>Institution Attended
+     <ul class="inst">
+           <li>Federal university of Agriculture, Makurdi (2014-2020)
+           <ul class="acad">
+               <li>B.Eng Electrical and Electronics Engineering</li>
+               <li>Grade : First Class Honours (4.75/5.00)</li>
+           </ul></li>
+           <li>Crystal Safety and Training Resources, Portharcourt (2021)
+           <ul class="acad">
+               <li>Occupation, Health, Safety and Environment(OHSE =""1, 2 and 3)</li>
+           </ul></li>
+       </ul></li>
+       
+             <li>Online Courses Completed
+             <ul class="inst">
+                 <li>Cisco Networking Academy(Netacad)
+                     <ul class="acad">
+                         <li>Introduction to Cyber security</li>
+                     </ul>
+                 </li>
+              <li>Yonsei University
+                     <ul class="acad">
+                         <li>Introduction to TCP/IP</li>
+                     </ul>
+                 </li>
+                <li>Meta
+                     <ul class="acad">
+                         <li>Introduction to Front End Development</li>
+                     </ul>
+                 </li>
+                <li>University of Buffalo
+                     <ul class="acad">
+                         <li>Solar Energy Systems Overview</li>
+                     </ul>
+                 </li> 
+                  <li>University of Michigan
+                     <ul class="acad">
+                         <li>Programming for Everybody(getting started with Python)</li>
+                     </ul>
+                 </li>
+                  <li>University of Michigan
+                     <ul class="acad">
+                         <li>Programming for Everybody(Python Data Structures)</li>
+                     </ul>
+                 </li>
+                  <li>LearnQuest
+                     <ul class="acad">
+                         <li>Cloud Computing Basics(Cloud 101)</li>
+                     </ul>
+                 </li>
+                  <li>Cisco Networking Academy(Netacad)
+                     <ul class="acad">
+                         <li>Networking Devices and Initial Configuration</li>
+                     </ul>
+                 </li>
+                  <li>Cisco Networking Academy(Netacad)
+                     <ul class="acad">
+                         <li>Python Essentials 1</li>
+                     </ul>
+                 </li></ul></li>
+             
+             <li>Award and Honours</li></ul>
+             </div>
+                    
+                    <!-- skills -->
+                    <div class="skills">
+                   <ul class="prof">
+           <li>Soft Skills
+           <ul class="inst">
+               <li>Good human networking</li>
+               <li>Team Work</li>
+               <li>Good oral and written communication</li>
+               <li>Quick delivery of assignments</li></ul></li>
+                <li>Hard Skills
+           <ul class="inst">
+               <li>Abilty to work under pressure</li>
+               <li>Daring</li>
+               <li>I meet deadlines</li>
+               <li>Quick grasping of novel ideas</li>
+               <li>Unquenchable zeal for improvement</li>
+               <li>Unsual ability to handle difficult and challenging tasks</li></ul></li>
+               <li>Programming Skills
+               <div class="container">
+       <div class="hdCont">
+      <div class="hd">
+          <p>HTML</p>
+          <p class="done">0</p>
+      </div>
+       <div class="pro">
+           <div class="prog-bar" data-val="80%"></div>
+       </div>
+       </div>
+       <div class="hdCont">
+       <div class="hd">
+          <p>CSS</p>
+          <p class="done">0</p>
+      </div>
+       <div class="pro">
+           <div class="prog-bar" data-val="75%"></div>
+       </div>
+       </div>
+       <div class="hdCont">
+      <div class="hd">
+          <p>JavaScript</p>
+          <p class="done">0</p>
+      </div>
+       <div class="pro">
+           <div class="prog-bar" data-val="60%"></div>
+       </div> 
+       </div>
+           <div class="hdCont">
+      <div class="hd">
+          <p>Python</p>
+          <p class="done">0</p>
+      </div>
+       <div class="pro">
+           <div class="prog-bar" data-val="70%"></div>
+       </div> 
+       </div>
+           <div class="hdCont">
+      <div class="hd">
+          <p>C</p>
+          <p class="done">0</p>
+      </div>
+       <div class="pro">
+           <div class="prog-bar" data-val="50%"></div>
+       </div> 
+       </div>
+           <div class="hdCont">
+      <div class="hd">
+          <p>C++</p>
+          <p class="done">0</p>
+      </div>
+       <div class="pro">
+           <div class="prog-bar" data-val="35%"></div>
+       </div> 
+       </div>
+          <div class="hdCont">
+      <div class="hd">
+          <p>Matlab</p>
+          <p class="done">0</p>
+      </div>
+       <div class="pro">
+           <div class="prog-bar" data-val="30%"></div>
+       </div> 
+       </div>
+           <div class="hdCont">
+      <div class="hd">
+          <p>Linux Command</p>
+          <p class="done">0</p>
+      </div>
+       <div class="pro">
+           <div class="prog-bar" data-val="40%"></div>
+       </div> 
+       </div>
+   </div>
+               </li>
+               </ul>
+                    </div>
+                    
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-  
-    <!-- -------services------- -->
-  <div id="services">
-      <div class="cont-service">
-          <h1>My Services</h1>
-          <div class="service-list">
-              <div>
-                  <span class="material-symbols-outlined">
-code
-</span>
-                  <h2>UI/UX Design</h2>
-                  <p>Contact me if you need an eye-catching user interfaces on your website. I design user interface for individual and corporate bodies</p>
-                  <a href="#">Learn More...</a>
-              </div>
-              
-              <div>
-                  <span class="material-symbols-outlined">
-crop
-</span>
-                 <h2>Web Design</h2>
-                  <p>Contact me if you need an eye-catching your website and web apps. I design user interface for individual and corporate bodies</p>
-                  <a href="#">Learn More...</a>
-              </div>
-              
-              <div>
-                  <span class="material-symbols-outlined">
-memory
-</span>
-                  <h2>Embedded Systems</h2>
-                  <p>Embedded systems are computers that serve a purpose.
-                  Think of IOT, monitor your appliances from anywhere around the globe</p>
-                  <a href="#">Learn More...</a>
-              </div>
-              
-          </div>
-      </div>
-  </div> 
- <!--  -- <div class="imk">
-  <img src="images/work1.jpg"> 
-  </div>-->
-  <div id="portfolio">
-      <div class="port-cont">
-          <h1>My Work</h1>
-          <div class="work-list">
-              <div class="work">
-                  <img src="images/work1.jpg" >
-                  <div class="layer">
-                      <h2>Chat App</h2>
-                      <p>With this app, you can connect with your friends all over the globe.</p>
-                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                      </div>
-                    </div>
-                  <div class="work">
-                  <img src="images/work2.jpg" >
-                  <div class="layer">
-                      <h2>Responsive Websites</h2>
-                      <p>A highly responsive website build using HTML, CSS and JavaScript.</p>
-                      <a href="#">
-                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                      </a>
-                      </div>
-                  </div>
-                   <div class="work">
-                  <img src="images/work3.jpg" >
-                  <div class="layer">
-                      <h2>Theft Detection System</h2>
-                      <p>Use to monitor homes and offices against theft.</p>
-                      <a href="#">
-                         <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
-                        </div>
-                  </div>
-              </div>
-              <div class="btn"><a href="#">See more...</a></div>
-          </div>
-      </div>
-
-      <!-------------------contact sesssion--------------------------------------->
-
-      <div id="contact">
-        <div class="cont-cont">
-            <div class="row">
-                <div class="cont-left">
-                    <h1>Contact me</h1>
-                    <p><i class="fa-solid fa-square-phone"></i></i>09028369378</p>
-                    <p><i class="fa-solid fa-envelope"></i>sundayoduhmatthias@gmail.com</p>
-
-                    <div class="social">
-                        <a href="https://www.facebook.com/matthias.sundayoduh"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/matthias-sunday-oduh-4a364122b"><i class="fab fa-linkedin"></i></a>
-                
-                    </div>
-                    <a href="images/cv.pdf" download  class="btn btn2 bt">Download CV <i class="fa-solid fa-download" id="down"></i></a>
-                    
+        </section>
+        <section class="section sec3 active-sect" id="portfolio"></section>
+        <section class="section sec4 active-sect" id="blogs">
+        </section>
+        <section class="section sec5 active-sect" id="contacts">
+            <h2>My Contacts</h2>
+            <div class="cont-cont">
+                <div class="social">
+                   <div class="back-img"><img src="img5.png" alt=""></div>
+                <div class="face">
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <p>09028369378</p>
                 </div>
-                <div class="cont-right">
-                    <form >
-                        <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="Email" placeholder="you@emal.com" required>
-                        <textarea name="message"rows="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                <div class="face">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <p>facebook</p>
+                </div>
+                <div class="face">
+                    <a href="#">
+                       <i class="fa-regular fa-envelope"></i>
+                    </a>                  <p>email</p>
+                </div>
+                <div class="face">
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <p>linkedin</p>
+                </div>
+                <div class="face">
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <p>github</p>
+                </div>
+                <div class="face">
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <p>whatsapp</p>
+                </div>
+                </div>
+                <div class="message">
+                    <p>Drop a message</p>
+                    <form>
+                      <div class="msg-n"> 
+                    <label for="name">Full Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required></div>
+                    <div class="msg-n"> 
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" name="phone" id="phone" placeholder="+2348000000009" required></div>
+                   <div class="msg-n"> 
+                    <label for="email">email address:</label>
+                    <input type="email" name="email" id="email" placeholder="you@gmail.com" required></div>
+                      <div class="msg-n">
+        <label for="msg">Message:</label>
+        <textarea id="msg" placeholder="Your message" required rows="7"></textarea>
+        <div class="msg-n">
+            <input type="submit" class="subm">
+        </div>
                     </form>
                 </div>
-            </div>
+   
+    </div>
+          <!--  <div class="soc">
+           <i class="fa-brands fa-facebook-f"></i>
+<i class="fa-solid fa-phone"></i>
+<i class="fa-brands fa-whatsapp"></i>
+<i class="fa-brands fa-linkedin-in"></i>
+<i class="fa-regular fa-messages"></i>
+<i class="fa-brands fa-github"></i> 
+</div>-->
+        </section>
+    </main>
+    <div class="controls">
+        <div class="control ctrl-1 active-btn" id="home">
+            <i class="fa-solid fa-house"></i>
+            <p>home</p>
+            <div class="active first"></div>
         </div>
-      </div>
-  </body>
-</html> 
+        <div class="control ctrl-2" id="about">
+            <i class="fa-solid fa-user"></i>
+            <p>about</p>
+            <div class="active"></div>
+        </div>
+        <div class="control ctrl-3" id="portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+            <p>portfolio</p>
+            <div class="active"></div>
+        </div>
+        <div class="control ctrl-4" id="blogs">
+            <i class="fa-solid fa-newspaper"></i>
+            <p>blogs</p>
+            <div class="active"></div>
+        </div>
+        <div class="control ctrl-5" id="contacts">
+            <i class="fa-solid fa-envelope"></i>
+            <p>contacts</p>
+            <div class="active"></div>
+        </div>
+    </div>
+   <script src="script.js"></script> 
+</body>
+</html>
