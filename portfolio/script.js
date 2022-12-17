@@ -1,54 +1,79 @@
-var tabs = document.getElementsByClassName("tab");
-var conts = document.getElementsByClassName("tab-co");
-//console.log(conts);
-//console.log(conts.length);
+const mainSect = document.querySelector(".parent-sect")
+const sectBtns = document.querySelectorAll(".active-sect")
+console.log(sectBtns.length)
+const contrlBtns = document.querySelectorAll(".control")
+console.log(contrlBtns.length)
+const cntrl = document.querySelector(".controls")
+console.log(cntrl.length)
+const btnAct = document.querySelectorAll(".active")
+const progValue = document.querySelectorAll(".done")
+//console.log("progVal", progValue.length)
+const progWidth = document.querySelectorAll(".prog-bar")
+//console.log("progWidth", progWidth.length)
 
-//ar g = [2, 4, 8, 9]
 
-/*function open(){
-    for (tab of g)
+function progress()
+{
+
+    for (let i = 0; i < progValue.length; i++)
     {
-    console.log("Hello")
+    let w = 0;
+     let interval = 4000
+         let p = progWidth[i].getAttribute("data-val")
+         let c = progValue[i].innerHTML
+         c =0;
+        var duration = Math.floor(interval/parseInt(p))
+       
+        let counter = setInterval(function() {
+       
+        progWidth[i].style.width = `${w}%`
+        w += 1
+        c += 1
+        progValue[i].innerHTML = `${c}%`
+        console.log(w)
+        if (w == parseInt(p))
+        {
+            clearInterval(counter)
+        }
+            
+        }, duration)
     }
+}
+function navigatePage() {
+
+    for (let i = 0; i < contrlBtns.length; i++)
+    {
+        contrlBtns[i].addEventListener("click", function()
+        {
+            for (let i = 0; i < contrlBtns.length; i++)
+            {
+                contrlBtns[i].classList.remove("active-btn")
+               sectBtns[i].style.display ="none"
+                btnAct[i].classList.remove("first")
+            }
+           contrlBtns[i].classList.add("active-btn")
+btnAct[i].classList.add("first")
+sectBtns[i].style.display = "block"
+        })
     }
-        //tab.classList.remove("active-tab");
-  //  }
-   // for (var cont of conts)
-   // {
-    //
-        //cont.classList.remove("active-cont");
-   // }
-    //console.log(event.currentTarget)
-    //event.currentTarget.classList.add("active-tab");
-    //document.getElementById(name).classList.add("active-cont")
-//}
-//open(name);*/
-
-function display(str)
-{
-for( tab of tabs)
-{
-   tab.classList.remove("active-tab")
-    //console.log(a.innerHTML)
+   /* yes", e => {
+      // console.log(e.target)
+       const id = e.target.id
+        const activeSect = document.getElementById(id)
+        console.log(activeSect, id)
+        if(activeSect)
+        {
+        for (let i = 0; i < sectBtns.length; i++)
+        {
+            sectBtns[i].clas.remove("active-sect")
+            
+        }
+        activeSect.classList.add("active-sect")
+        
+       
+     console.log(activeSect.className)
+    }})*/
+  
 }
-
-for (cont of conts)
-{
-    cont.classList.remove("active-cont")
-}
-event.currentTarget.classList.add("active-tab")
-
-document.getElementById(str).classList.add("active-cont")
-    //console.log("Hello world")
-}
-
-function disp(){
-let h = document.getElementById("g")
-    h.style.display = "block"
-}
-
-function hide(){
-    let h= document.getElementById("g")
-    
-    h.style.display = "none";
-}
+navigatePage() 
+Progress()
